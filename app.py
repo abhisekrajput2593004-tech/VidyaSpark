@@ -451,18 +451,7 @@ page = st.sidebar.radio(
     ],
 )
 
-st.sidebar.divider()
-st.sidebar.divider()
-st.sidebar.markdown("**🔑 Gemini AI Settings**")
-api_input = st.sidebar.text_input(
-    "Gemini API Key",
-    value=st.session_state.gemini_api_key,
-    type="password",
-    placeholder="Paste your AIza... key",
-    help="Get a free key from aistudio.google.com/apikey",
-)
-if api_input != st.session_state.gemini_api_key:
-    st.session_state.gemini_api_key = api_input
+
 st.sidebar.divider()
 st.sidebar.markdown("**Developed by:**\n### Abhisek Kumar")
 st.sidebar.caption("B.Tech CSE (AI & ML) | Reg: 125433")
